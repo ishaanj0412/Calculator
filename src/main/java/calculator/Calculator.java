@@ -48,7 +48,7 @@ public class Calculator {
         System.out.println("-------------");
 
         Scanner sc = new Scanner(System.in);
-//        sc.nextLine();
+        sc.nextLine();
 
         int choice;
 
