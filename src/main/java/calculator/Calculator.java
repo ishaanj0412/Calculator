@@ -49,6 +49,8 @@ public class Calculator {
         Scanner sc = new Scanner(System.in);
         sc.nextLine();
 
+        int choice;
+
         do{
             Calculator.menu();
 
