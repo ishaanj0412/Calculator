@@ -14,9 +14,6 @@ public class Calculator {
     }
 
     public static void menu(){
-        System.out.println("-------------");
-        System.out.println("Calculator");
-        System.out.println("-------------");
         System.out.println("1. Addition");
         System.out.println("2. Subtraction");
         System.out.println("3. Multiplication");
@@ -46,8 +43,12 @@ public class Calculator {
     public static void main(String[] args) {
         Calculator cal = new Calculator();
 
+        System.out.println("-------------");
+        System.out.println("Calculator");
+        System.out.println("-------------");
+
         Scanner sc = new Scanner(System.in);
-        sc.nextLine();
+//        sc.nextLine();
 
         int choice;
 
@@ -102,6 +103,7 @@ public class Calculator {
 
                 case 5:
                     System.out.println("GoodBye");
+                    break;
 
                 default:
                     System.out.println("Invalid choice. Please try again.");
