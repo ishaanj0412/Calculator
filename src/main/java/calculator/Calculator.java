@@ -7,10 +7,10 @@ import java.util.Scanner;
 //import java.util.logging.LogManager;
 
 public class Calculator {
-    private static Logger logger;
+//    private static Logger logger;
 
     public Calculator() {
-        logger  = LogManager.getLogger(Calculator.class);
+//        logger  = LogManager.getLogger(Calculator.class);
     }
 
     public static void menu(){
