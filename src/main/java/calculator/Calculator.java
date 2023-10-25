@@ -43,14 +43,14 @@ public class Calculator {
     public static void main(String[] args) {
         Calculator cal = new Calculator();
 
+        Scanner sc = new Scanner(System.in);
+//        sc.nextLine();
+
         System.out.println("-------------");
         System.out.println("Calculator");
         System.out.println("-------------");
 
-        Scanner sc = new Scanner(System.in);
-        sc.nextLine();
-
-        int choice;
+        int choice=-1;
 
         do{
             Calculator.menu();
