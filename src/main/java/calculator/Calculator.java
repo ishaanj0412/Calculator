@@ -53,9 +53,9 @@ public class Calculator {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("---------------");
-        System.out.println("  Calculator  ");
-        System.out.println("---------------");
+        System.out.println("-------------");
+        System.out.println("Calculator");
+        System.out.println("-------------");
 
         int choice=-1;
 
