@@ -107,7 +107,7 @@ public class Calculator {
                     System.out.println("Enter second number: ");
                     num2 = sc.nextInt();
                     Pair<Boolean, Double> ansdiv = cal.myDiv(num1, num2);
-                    if(ansdiv.getKey()==false) {
+                    if(!ansdiv.getKey()) {
                         System.out.println("Invalid input!");
                     }
                     else {
