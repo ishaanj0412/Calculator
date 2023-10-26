@@ -1,16 +1,15 @@
 package calculator;
 
-//import org.apache.logging.log4j.LogManager;
-//import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Scanner;
-//import java.util.logging.LogManager;
 
 public class Calculator {
-//    private static Logger logger;
+    private static Logger logger;
 
     public Calculator() {
-//        logger  = LogManager.getLogger(Calculator.class);
+        logger  = LogManager.getLogger(Calculator.class);
     }
 
     public static void menu(){
@@ -23,28 +22,33 @@ public class Calculator {
     }
 
     public int myAdd(int num1, int num2){
+        logger.info("[ADDITION] - SUCCESSFUL!");
         return num1+num2;
     }
 
     public int mySub(int num1, int num2){
+        logger.info("[SUBTRACTION] - SUCCESSFUL!");
         return num1-num2;
     }
 
     public int myMul(int num1, int num2){
+        logger.info("[MULTIPLICATION] - SUCCESSFUL!");
         return num1*num2;
     }
 
     public double myDiv(int num1, int num2){
         if(num2==0){
+            logger.error("[DIVISION] - INVALID INPUT!");
             return -1;
         }
+
+        logger.info("[DIVISI0N] - SUCCESSFUL!");
         return (double)num1/num2;
     }
     public static void main(String[] args) {
         Calculator cal = new Calculator();
 
         Scanner sc = new Scanner(System.in);
-//        sc.nextLine();
 
         System.out.println("-------------");
         System.out.println("Calculator");
