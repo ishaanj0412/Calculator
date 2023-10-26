@@ -57,7 +57,7 @@ public class Calculator {
         System.out.println("Calculator");
         System.out.println("-------------");
 
-        int choice=-1;
+        int choice=5;
 
         do{
             Calculator.menu();
