@@ -46,6 +46,7 @@ public class Calculator {
         return (double)num1/num2;
     }
     public static void main(String[] args) {
+        logger.info("Start of Execution");
         Calculator cal = new Calculator();
 
         Scanner sc = new Scanner(System.in);
@@ -65,33 +66,40 @@ public class Calculator {
 
             switch(choice){
                 case 1:
+                    logger.info("START OP: ADDITION");
                     System.out.println("Enter first number: ");
                     num1 = sc.nextInt();
                     System.out.println("Enter second number: ");
                     num2 = sc.nextInt();
                     ans = cal.myAdd(num1, num2);
                     System.out.println("Sum of " + num1 + " and " + num2 + " is " + ans);
+                    logger.info("END OP: ADDITION");
                     break;
 
                 case 2:
+                    logger.info("START OP: SUBTRACTION");
                     System.out.println("Enter first number: ");
                     num1 = sc.nextInt();
                     System.out.println("Enter second number: ");
                     num2 = sc.nextInt();
                     ans = cal.mySub(num1, num2);
                     System.out.println("Subtraction of " + num1 + " and " + num2 + " is " + ans);
+                    logger.info("END OP: SUBTRACTION");
                     break;
 
                 case 3:
+                    logger.info("START OP: MULTIPLICATION");
                     System.out.println("Enter first number: ");
                     num1 = sc.nextInt();
                     System.out.println("Enter second number: ");
                     num2 = sc.nextInt();
                     ans = cal.myMul(num1, num2);
                     System.out.println("Multiplication of " + num1 + " and " + num2 + " is " + ans);
+                    logger.info("END OP: MULTIPLICATION");
                     break;
 
                 case 4:
+                    logger.info("START OP: DIVISION");
                     System.out.println("Enter first number: ");
                     num1 = sc.nextInt();
                     System.out.println("Enter second number: ");
@@ -103,6 +111,7 @@ public class Calculator {
                     else {
                         System.out.println("Division of " + num1 + " by " + num2 + " is " + ansdiv);
                     }
+                    logger.info("END OP: DIVISION");
                     break;
 
                 case 5:
@@ -115,6 +124,7 @@ public class Calculator {
             System.out.println();
         } while (choice != 5);
 
+        logger.info("End of Execution");
         sc.close();
     }
 }
