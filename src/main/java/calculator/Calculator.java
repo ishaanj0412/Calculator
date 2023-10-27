@@ -57,7 +57,7 @@ public class Calculator {
         System.out.println("Calculator");
         System.out.println("--------------");
 
-//        int choice=5;
+        int choice;
 //        sc.nextLine();
 
 //        do{
